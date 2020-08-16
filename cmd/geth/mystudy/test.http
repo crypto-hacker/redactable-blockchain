@@ -1,0 +1,37 @@
+POST http://localhost:8501
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBlockByNumber",
+  "params": ["0x1", true],
+  "id": 1
+}
+
+###
+POST http://localhost:8501
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_call",
+  "params": [{
+    "from": "0xbfb3c781e9262bd543f5ffd3ca4d1852ef7a6942",
+    "to": "0x46D0BDA7f1fb5eFbc08DC1E6da17D5c147abF6de",
+    "data": "0x06fdde03"
+  }, "pending"],
+  "id": 1
+}
+
+###
+POST http://127.0.0.1:8503
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "super_modifyBlock",
+  "params": ["0x1950860c819725f07d9f9103e7aae234594e37dc4a09e01e6053a9016008b308"],
+  "id": 1
+}
+
+###

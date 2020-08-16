@@ -1,0 +1,1 @@
+main --datadir node init poatest.json
